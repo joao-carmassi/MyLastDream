@@ -17,7 +17,7 @@ async function adicionaFotosNaGaleria() {
     containerGaleria.innerHTML += `
     <div id='${idRegiao}'>
         <h2>${lugar}</h2>
-        <span id='container__${idRegiao}'>b
+        <span id='container__${idRegiao}'>
         </span>
     </div>
     `;

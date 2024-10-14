@@ -13,7 +13,6 @@
   font-optical-sizing: auto;
   font-style: normal;
   line-height: normal;
-  transition-duration: 0.5s;
 }
 
 body {
@@ -27,7 +26,7 @@ section {
 }
 
 .containerInfo {
-  height: 100vh;
+  height: 100svh;
   background-image: url("../imgs/info.png");
   background-position: bottom;
   background-size: cover;
@@ -105,6 +104,10 @@ section {
     margin-bottom: 15px;
   }
 
+  & img:nth-last-child(1) {
+    margin-bottom: 0px;
+  }
+
   .aparesceAnimacaoFotos {
     animation: aparesceAnimacaoFotos linear both;
     animation-timeline: view();
@@ -137,7 +140,6 @@ section {
     box-shadow: 0 0 150px rgb(0, 0, 0) inset;
     background-image: url("../imgs/info-celular.png");
     background-color: black;
-    height: 100svh;
 
     & > div {
       width: 100%;
@@ -173,7 +175,7 @@ section {
     }
 
     & span {
-      columns: 2;
+      columns: 1;
     }
 
     & img {
