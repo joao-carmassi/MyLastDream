@@ -1,16 +1,19 @@
 {
-  "outros": [
-    "img1.jpg",
-    "img2.jpg",
-    "img3.jpg",
-    "img4.jpg",
-    "img5.jpg",
-    "img6.png",
-    "img7.jpg",
-    "img8.jpg",
-    "img9.png",
-    "img10.png",
-    "img11.png"
-  ],
-  "Regiao Tal": []
+  "How it started": {
+    "texto": "I’m João, a web developer by day and an amateur photographer by passion. A gaymer at heart, and above all, someone deeply in love with my partner. After discovering the magical camera item in Sky: Children of the Light, I found a way to blend all my loves into one place capturing the journey we share through the lens, each photo a reflection of our adventure together, soaring through a world that feels as infinite as our bond.",
+    "banner": "img1.jpg",
+    "lado": "right",
+    "imgs": [
+      "img2.jpg",
+      "img3.jpg",
+      "img4.jpg",
+      "img5.jpg",
+      "img6.png",
+      "img7.jpg",
+      "img8.jpg",
+      "img9.png",
+      "img10.png",
+      "img11.png"
+    ]
+  }
 }

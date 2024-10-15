@@ -19,7 +19,12 @@ body {
   background-color: var(--cor2);
 }
 
-section {
+.primeiroContainer {
+  animation: fadeOut 2s;
+}
+
+section,
+.containerInfo {
   min-height: 600px;
   background-color: var(--cor1);
   font-family: var(--fontMain);
@@ -33,7 +38,8 @@ section {
   background-repeat: no-repeat;
   box-shadow: 0 0 150px rgb(0, 0, 0) inset;
   position: relative;
-  animation: fadeOut 2s;
+  background-color: var(--cor1);
+  background-attachment: fixed;
 
   & > div {
     width: 50%;
@@ -73,6 +79,20 @@ section {
   }
 }
 
+hr {
+  margin: 0;
+  padding-bottom: 50px;
+  background-color: white;
+}
+
+.infoRegiao {
+  margin-bottom: 50px;
+
+  & p {
+    margin-top: 0px !important;
+  }
+}
+
 .containerInfo::before {
   content: "";
   position: absolute;
@@ -80,6 +100,15 @@ section {
   height: 100%;
   background: rgb(0, 0, 0);
   background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, transparent 100%);
+}
+
+.containerInfo[lado="right"] {
+  display: flex;
+  justify-content: end;
+}
+
+.containerInfo[lado="right"]::before {
+  background: linear-gradient(270deg, rgba(0, 0, 0, 1) 0%, transparent 100%);
 }
 
 .containerGaleria {
@@ -182,10 +211,4 @@ section {
       margin-bottom: 10px;
     }
   }
-}
-
-@media only screen and (max-width: 768px) {
-}
-
-@media only screen and (max-width: 1200px) {
 }
