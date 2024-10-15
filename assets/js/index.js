@@ -50,7 +50,7 @@ async function adicionaFotosNaGaleria(data) {
     imgsLugar.forEach((fotos) => {
       const containerLugar = document.getElementById(`container__${idRegiao}`);
       containerLugar.innerHTML += `
-          <img class="aparesceAnimacaoFotos" src='./assets/imgs/${fotos}' />
+          <img class="aparesceAnimacaoFotos" loading="lazy" src='./assets/imgs/${fotos}' />
         `;
     });
   });
