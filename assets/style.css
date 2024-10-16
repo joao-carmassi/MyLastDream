@@ -9,34 +9,28 @@
   --fontTitulo: "Baloo Paaji 2", sans-serif;
 }
 
+/* TODO: ve se arruma o jumpscare branco */
+/* TODO: Fazer upscale dos banners */
+
 * {
   font-optical-sizing: auto;
   font-style: normal;
   line-height: normal;
 }
 
-body {
-  background-color: var(--cor2);
+section {
+  background-color: var(--cor1);
 }
 
-.primeiroContainer {
-  animation: fadeOut 2s;
-}
-
-section,
 .containerInfo {
   min-height: 600px;
-  background-color: var(--cor1);
+  height: 100vh;
   font-family: var(--fontMain);
-}
-
-.containerInfo {
-  height: 100svh;
-  background-image: url("../imgs/info.png");
+  background-image: url("./imgs/info.png");
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
-  box-shadow: 0 0 150px rgb(0, 0, 0) inset;
+  box-shadow: 0 0 150px rgba(0, 0, 0, 0.5) inset;
   position: relative;
   background-color: var(--cor1);
   background-attachment: fixed;
@@ -79,14 +73,8 @@ section,
   }
 }
 
-hr {
-  margin: 0;
-  padding-bottom: 50px;
-  background-color: white;
-}
-
 .infoRegiao {
-  margin-bottom: 50px;
+  margin: 50px 0;
 
   & p {
     margin-top: 0px !important;
@@ -99,7 +87,7 @@ hr {
   width: 100%;
   height: 100%;
   background: rgb(0, 0, 0);
-  background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, transparent 100%);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, transparent 100%);
 }
 
 .containerInfo[lado="right"] {
@@ -108,7 +96,12 @@ hr {
 }
 
 .containerInfo[lado="right"]::before {
-  background: linear-gradient(270deg, rgba(0, 0, 0, 1) 0%, transparent 100%);
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0.75) 0%, transparent 100%);
+}
+
+.primeiroContainer {
+  animation: fadeOut 2s;
+  height: 100svh;
 }
 
 .containerGaleria {
@@ -155,11 +148,9 @@ hr {
 
 @keyframes fadeOut {
   from {
-    opacity: 0;
-    filter: blur(10px);
+    filter: blur(15px);
   }
   to {
-    opacity: 1;
   }
 }
 
@@ -167,7 +158,7 @@ hr {
   .containerInfo {
     background-position: center;
     box-shadow: 0 0 150px rgb(0, 0, 0) inset;
-    background-image: url("../imgs/info-celular.png");
+    background-image: url("./imgs/info-celular.png");
     background-color: black;
 
     & > div {
@@ -210,5 +201,16 @@ hr {
     & img {
       margin-bottom: 10px;
     }
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 940px) {
+  .infoRegiao div {
+    width: 100%;
+  }
+  .infoRegiao::before {
+    background: none !important;
+    background-color: rgba(0, 0, 0, 0.35) !important;
+    backdrop-filter: blur(5px);
   }
 }

@@ -38,7 +38,7 @@ async function adicionaFotosNaGaleria(data) {
 
     // Coloca img fundo
     const containerRegiao = document.querySelector(`.fundo-${idRegiao}`);
-    containerRegiao.style.backgroundImage = `url(assets/imgs/${dataLugar.banner})`;
+    containerRegiao.style.backgroundImage = `url(assets/imgs/${idRegiao}/${dataLugar.banner})`;
 
     // Coloca informacoes no lado certo
     if (dataLugar.lado === "right") {
@@ -50,7 +50,7 @@ async function adicionaFotosNaGaleria(data) {
     imgsLugar.forEach((fotos) => {
       const containerLugar = document.getElementById(`container__${idRegiao}`);
       containerLugar.innerHTML += `
-          <img class="aparesceAnimacaoFotos" loading="lazy" src='./assets/imgs/${fotos}' />
+          <img class="aparesceAnimacaoFotos" loading="lazy" src='./assets/imgs/${idRegiao}/${fotos}' />
         `;
     });
   });

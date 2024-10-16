@@ -1,9 +1,21 @@
 {
   "How it started": {
-    "texto": "I’m João, a web developer by day and an amateur photographer by passion. A gaymer at heart, and above all, someone deeply in love with my partner. After discovering the magical camera item in Sky: Children of the Light, I found a way to blend all my loves into one place capturing the journey we share through the lens, each photo a reflection of our adventure together, soaring through a world that feels as infinite as our bond.",
-    "banner": "img1.jpg",
+    "texto": "I’m João, a web developer by day and an amateur photographer by passion. A gamer at heart, and above all, someone deeply in love with my partner. After discovering the magical camera item in Sky: Children of the Light, I found a way to blend all my loves into one place capturing the journey we share through the lens, each photo a reflection of our adventure together, soaring through a world that feels as infinite as our bond.",
+    "banner": "img1.png",
     "lado": "right",
     "imgs": [
+      "20241015222025_1.jpg",
+      "20241015222052_1.jpg",
+      "20241015222150_1.jpg",
+      "20241015222422_1.jpg",
+      "20241015223102_1.jpg",
+      "20241015223609_1.jpg",
+      "20241015223955_1.jpg",
+      "20241015224505_1.jpg",
+      "d62210ff-be8f-4b75-aaea-d871d8af7950.png",
+      "ea4fe7ba-bb1b-4f97-a928-85b9f68bc895.png",
+      "img10.png",
+      "img11.png",
       "img2.jpg",
       "img3.jpg",
       "img4.jpg",
@@ -11,9 +23,26 @@
       "img6.png",
       "img7.jpg",
       "img8.jpg",
-      "img9.png",
-      "img10.png",
-      "img11.png"
+      "img9.png"
+    ]
+  },
+  "Ilha do Alvorecer": {
+    "texto": "",
+    "banner": "20241015232432_1.png",
+    "lado": "right",
+    "imgs": [
+      "20241015232235_1.jpg",
+      "20241015232705_1.jpg",
+      "20241015232813_1.jpg",
+      "20241015234524_1.jpg",
+      "20241015234528_1.jpg",
+      "20241015234536_1.jpg",
+      "20241015235346_1.jpg",
+      "20241016000710_2.jpg",
+      "20241016000741_1.jpg",
+      "6ba20a5b-f1ac-45ba-9f31-fe4c52b7cfb4.png",
+      "947048da-baff-4127-a06e-056c3822deb6.png",
+      "fff5d79f-06e9-4665-b8c6-da5011da4806.png"
     ]
   }
 }
